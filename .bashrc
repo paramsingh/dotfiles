@@ -119,4 +119,5 @@ export PATH=$PATH:$HOME/algs4/bin:$HOME/bin
 
 # My custom aliases
 alias todo="cat ~/TODO"
-
+alias ibr="xbacklight -inc 10"
+alias dbr="xbacklight -dec 10"
