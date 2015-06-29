@@ -110,6 +110,19 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# brightness
+bindsym 0x1008ff03 exec --no-startup-id xbacklight -dec 10
+bindsym 0x1008ff02 exec --no-startup-id xbacklight -inc 10
+
+# backlight
+bindsym 0x1008ff05 exec --no-startup-id /home/param/bin/bl 25
+bindsym 0x1008ff06 exec --no-startup-id /home/param/bin/bl 4
+
+# volume
+bindsym 0x1008ff13 exec --no-startup-id amixer set 'Master' 5%+
+bindsym 0x1008ff11 exec --no-startup-id amixer set 'Master' 5%-
+bindsym 0x1008ff12 exec --no-startup-id amixer set 'Master' 0%
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
