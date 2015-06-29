@@ -121,3 +121,6 @@ export PATH=$PATH:$HOME/algs4/bin:$HOME/bin
 alias todo="cat ~/TODO"
 alias ibr="xbacklight -inc 10"
 alias dbr="xbacklight -dec 10"
+alias volup="amixer set \'Master\' 5%+"
+alias voldown="amixer set \'Master\' 5%-"
+alias mute="amixer set \'Master\' 0%"
