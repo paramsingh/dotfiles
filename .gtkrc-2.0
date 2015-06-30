@@ -1,0 +1,5 @@
+include "/usr/share/themes/Greybird/gtk-2.0/gtkrc"
+
+gtk-theme-name = "greybird"
+gtk-icon-theme-name = "elementary-xfce-dark"
+gtk-font-name = "Liberation Sans 11"
