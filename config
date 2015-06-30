@@ -117,8 +117,10 @@ bindsym Shift+0x1008ff03 exec --no-startup-id xbacklight -dec 15
 bindsym Shift+0x1008ff02 exec --no-startup-id xbacklight -inc 15
 
 # backlight
-bindsym 0x1008ff05 exec --no-startup-id /home/param/bin/bl 25
-bindsym 0x1008ff06 exec --no-startup-id /home/param/bin/bl 4
+bindsym 0x1008ff05 exec --no-startup-id /home/param/.bin/bl 10
+bindsym Shift+0x1008ff05 exec --no-startup-id /home/param/.bin/bl 25
+bindsym 0x1008ff06 exec --no-startup-id /home/param/.bin/bl 5
+bindsym Shift+0x1008ff06 exec --no-startup-id /home/param/.bin/bl 0
 
 # volume
 bindsym 0x1008ff13 exec --no-startup-id amixer set 'Master' 5%+
