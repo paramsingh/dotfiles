@@ -111,8 +111,10 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # brightness
-bindsym 0x1008ff03 exec --no-startup-id xbacklight -dec 10
-bindsym 0x1008ff02 exec --no-startup-id xbacklight -inc 10
+bindsym 0x1008ff03 exec --no-startup-id xbacklight -dec 5
+bindsym 0x1008ff02 exec --no-startup-id xbacklight -inc 5
+bindsym Shift+0x1008ff03 exec --no-startup-id xbacklight -dec 15
+bindsym Shift+0x1008ff02 exec --no-startup-id xbacklight -inc 15
 
 # backlight
 bindsym 0x1008ff05 exec --no-startup-id /home/param/bin/bl 25
