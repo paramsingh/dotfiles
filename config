@@ -199,3 +199,8 @@ bindsym $mod + Shift + x exec i3lock -c 000000
 # switching between workspaces
 bindsym $mod + period workspace next
 bindsym $mod + comma workspace prev
+
+# clementine controls
+bindsym XF86AudioNext exec clementine --next
+bindsym XF86AudioPrev exec clementine --prev
+bindsym XF86AudioPlay exec clementine --play-pause
