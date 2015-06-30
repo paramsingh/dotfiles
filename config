@@ -120,7 +120,9 @@ bindsym 0x1008ff06 exec --no-startup-id /home/param/bin/bl 4
 
 # volume
 bindsym 0x1008ff13 exec --no-startup-id amixer set 'Master' 5%+
+bindsym Shift + 0x1008ff13 exec --no-startup-id amixer set 'Master' 20%+
 bindsym 0x1008ff11 exec --no-startup-id amixer set 'Master' 5%-
+bindsym Shift + 0x1008ff11 exec --no-startup-id amixer set 'Master' 20%-
 bindsym 0x1008ff12 exec --no-startup-id amixer set 'Master' 0%
 
 # reload the configuration file
@@ -190,3 +192,10 @@ bindsym $mod+Shift+s exec xfce4-settings-manager
 
 # xfce panel
 exec --no-startup-id xfce4-panel --disable-wm-check
+
+# lock
+bindsym $mod + Shift + x exec i3lock -c 000000
+
+# switching between workspaces
+bindsym $mod + period workspace next
+bindsym $mod + comma workspace prev
