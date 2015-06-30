@@ -158,15 +158,15 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status --config /home/param/.i3status.conf
-        tray_output LVDS
-        colors{
-            background #232323
-            statusline #DCDCDC
-        }
-        font pango: Inconsolata 11
-}
+# bar {
+#        status_command i3status --config /home/param/.i3status.conf
+#        tray_output LVDS
+#        colors{
+#            background #232323
+#            statusline #DCDCDC
+#        }
+#        font pango: Inconsolata 11
+#}
 
 # change the font
 font pango: Inconsolata 11
@@ -178,3 +178,15 @@ exec --no-startup-id feh --bg-fill /home/param/Pictures/Linux_2014_dark_logo.png
 exec --no-startup-id nm-applet
 
 exec --no-startup-id xbacklight -set 20
+
+# xfce4-notify
+for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+
+# shutdown menu
+bindsym $mod+Shift+p exec xfce4-session-logout
+
+# settings
+bindsym $mod+Shift+s exec xfce4-settings-manager
+
+# xfce panel
+exec --no-startup-id xfce4-panel --disable-wm-check
