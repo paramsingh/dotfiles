@@ -115,7 +115,7 @@ fi
 
 export PS1="\[\e[32m\]\u : \[\e[34m\]\w $ \[\e[0m\]"
 export PYTHONSTARTUP=$HOME/.pythonstartup
-export PATH=$PATH:$HOME/algs4/bin:$HOME/bin
+export PATH=$PATH:$HOME/algs4/bin:$HOME/.bin
 
 # My custom aliases
 alias todo="cat ~/TODO"
@@ -125,3 +125,6 @@ alias volup="amixer set \'Master\' 5%+"
 alias voldown="amixer set \'Master\' 5%-"
 alias mute="amixer set \'Master\' 0%"
 alias please="sudo"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
