@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 font pango: Inconsolata 11
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/param/Pictures/Linux_2014_dark_logo.png
+exec --no-startup-id feh --bg-fill /home/param/Pictures/wallpapers/pEXtAWR.jpg
 
 # Network manager
 exec --no-startup-id nm-applet
@@ -190,9 +190,6 @@ for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_togg
 
 # shutdown menu
 bindsym $mod+Shift+p exec xfce4-session-logout
-
-# settings
-bindsym $mod+Shift+s exec xfce4-settings-manager
 
 # xfce panel
 exec --no-startup-id xfce4-panel --disable-wm-check
@@ -208,3 +205,7 @@ bindsym $mod + comma workspace prev
 bindsym XF86AudioNext exec clementine --next
 bindsym XF86AudioPrev exec clementine --prev
 bindsym XF86AudioPlay exec clementine --play-pause
+
+# screenshot bindsyms
+bindsym --release $mod + s exec scrot $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym --release $mod + Shift + s exec scrot -s $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png
