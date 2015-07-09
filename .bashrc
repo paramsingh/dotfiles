@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PS1="\[\e[32m\]\u : \[\e[34m\]\w $ \[\e[0m\]"
+export PS1="\[\e[32m\]\u : \[\e[34m\]\W $ \[\e[0m\]"
 export PYTHONSTARTUP=$HOME/.pythonstartup
 export PATH=$PATH:$HOME/algs4/bin:$HOME/.bin
 
