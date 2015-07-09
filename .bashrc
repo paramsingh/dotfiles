@@ -127,6 +127,7 @@ alias mute="amixer set \'Master\' 0%"
 alias please="sudo"
 alias syllabus="evince ~/Documents/Books/Syllabus.pdf"
 alias b100="xbacklight -set 100"
+alias pyhton="python"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

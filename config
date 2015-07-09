@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 font pango: Inconsolata 11
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/param/Pictures/wallpapers/daft-punk.jpg
+exec --no-startup-id feh --bg-fill /home/param/Pictures/wallpapers/pattern.jpg
 
 # Network manager
 exec --no-startup-id nm-applet
