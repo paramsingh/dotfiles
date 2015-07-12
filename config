@@ -67,7 +67,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+bindsym $mod+Shift+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -209,3 +209,7 @@ bindsym XF86AudioPlay exec clementine --play-pause
 # screenshot bindsyms
 bindsym --release $mod + s exec scrot $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png
 bindsym --release $mod + Shift + s exec scrot -s $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png
+
+# other key bindings
+bindsym $mod + f exec --no-startup-id thunar
+bindsym Control + space exec xfce4-appfinder
