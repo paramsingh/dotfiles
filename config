@@ -111,16 +111,16 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # brightness
-bindsym 0x1008ff03 exec --no-startup-id xbacklight -dec 5
-bindsym 0x1008ff02 exec --no-startup-id xbacklight -inc 5
-bindsym Shift+0x1008ff03 exec --no-startup-id xbacklight -dec 15
-bindsym Shift+0x1008ff02 exec --no-startup-id xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym Shift+XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 15
+bindsym Shift+XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 15
 
 # backlight
-bindsym 0x1008ff05 exec --no-startup-id /home/param/.bin/bl 10
-bindsym Shift+0x1008ff05 exec --no-startup-id /home/param/.bin/bl 25
-bindsym 0x1008ff06 exec --no-startup-id /home/param/.bin/bl 5
-bindsym Shift+0x1008ff06 exec --no-startup-id /home/param/.bin/bl 0
+# bindsym 0x1008ff05 exec --no-startup-id /home/param/.bin/bl 10
+# bindsym Shift+0x1008ff05 exec --no-startup-id /home/param/.bin/bl 25
+# bindsym 0x1008ff06 exec --no-startup-id /home/param/.bin/bl 5
+# bindsym Shift+0x1008ff06 exec --no-startup-id /home/param/.bin/bl 0
 
 # volume
 bindsym 0x1008ff13 exec --no-startup-id amixer set 'Master' 5%+
@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 font pango: Inconsolata 11
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/param/Pictures/wallpapers/pattern.jpg
+# exec --no-startup-id feh --bg-fill /home/param/Pictures/wallpapers/pattern.jpg
 
 # Network manager
 exec --no-startup-id nm-applet
