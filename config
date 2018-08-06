@@ -213,3 +213,5 @@ bindsym --release $mod + Shift + s exec scrot -s $HOME/Pictures/screenshot-$(dat
 # other key bindings
 bindsym $mod + f exec --no-startup-id thunar
 bindsym Control + space exec xfce4-appfinder
+
+exec --no-startup-id ssh-add
