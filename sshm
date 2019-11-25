@@ -1,0 +1,8 @@
+#!/bin/bash
+
+HOST=${1}
+if [ $HOST == "leader" ]; then
+    ssh param@leader.listenbrainz.org
+else
+    ssh param@$HOST.metabrainz.org
+fi

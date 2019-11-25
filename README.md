@@ -30,3 +30,8 @@ This should start using xfce4-panel, add some shortcuts etc.
     $ cp .vimrc ~/.vimrc
     :PluginInstall
     :colorscheme PaperColor
+
+### Copy the `sshm` script to .bin
+
+    $ mkdir ~/.bin
+    $ cp sshm ~/.bin/sshm
